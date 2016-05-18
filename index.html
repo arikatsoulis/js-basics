@@ -1,0 +1,173 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Bootstrap Boilerplate</title>
+		<style>
+			/*Custom CSS here*/
+		</style>
+	</head>
+	<body>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<p id="someText"></p>
+
+	  	   
+
+	    <script>
+
+
+// _________________________  OBJECTS AND PASSING A VALUE TO AN OBJECT ____________________________ //
+
+	 //EXAMPLE
+
+	    // // JS (global) objects
+
+	    // 	var numObject = {
+	    // 		numbOne:"1",
+	    // 		numTwo:"2",
+	    // 		numThree:"3"
+	    // 	};
+
+	    // // Adding in a function that adds 212 property to the object
+
+	    // 	function addProperty(){
+	    // 		var addNum = 1000;
+	    // 		numObject.addNum = addNum;
+	    // 	}
+
+	    // 	addProperty();
+
+	    // 	console.log(numObject);
+
+
+
+
+// _________________________________  ARRAYS (math done easy) _________________________________ //
+
+	 //NOTE
+	 	//arrays can be inside objects vise versa
+
+	 //EXAMPLE
+	 	// var anArray = [1, 39, 44, 22, 72323542351];
+
+	 	// 	how to access data within the array ( 0, 1, 2, 3 .... )
+	 	// console.log(anArray[2] + anArray[3])
+
+
+
+// _________________________________  OPERATORS (math done easy) _________________________________ //
+	
+
+		//EXAMPLE
+
+		// var someMath = 0.5 * 4 + (491 + 50);
+		// alert(someMath);
+
+
+// ________________________________________  ARGUMENTS ________________________________________ //
+
+
+		//EXAMPLE
+
+		//global variables be called in mathIt
+
+		// var nine = 9;
+		// var ten = 10;
+
+		// function mathIt(numberA, numberB) {
+		// 	//this is inside the funciton
+		// 	//actual processing and action occur here
+		// 	var neg = numberA - numberB;
+		// 	var ad = numberA + numberB;
+
+		// 	//the function needs to return something
+		// 	return ad
+		// }
+
+		// //final output 
+
+		// alert(mathIt(nine, ten));
+
+
+
+// ________________________________  DESCISION MAKERS (if, else) _________________________________ //
+
+
+	//NOTES
+
+		//BASIC STRUCTURE
+			// if(condition) {
+			// 	//code goes here
+			// } else {
+			// 	//else code goes here
+			// }
+		// && (and) || (or)
+		// one "=" is assigning 
+		// 2 "=="" or 3 "=="" is checking
+
+
+	//EXAMPLE
+
+		// var aNumber = 99
+
+		// if (aNumber > 9 && aNumber < 100) {
+		// //below we grab the paragraph by via the id (para) || .innerHTML strips out element
+		// //new (local) variable para
+		// 	var para = document.getElementById('someText');
+		// 	para.textContent = ('YOOOO');
+
+		// } else {
+		// 	var para = document.getElementById('someText');
+		// 	para.textContent = ('NAAAY');
+		// }
+
+
+// ___________________________________________  LOOPS ___________________________________________ //
+		
+	//EXAMPLE
+
+		//an array of scores
+		var scores = [24, 32, 23];
+
+		//number of items within the scores array (3 in this case)
+		var arrayLength= scores.length;
+
+		//the current round of the loop
+		var roundNumber = 0;
+
+		//declared an empty variable
+		var msg = '';
+
+		//here we use a for loop to loop through the array
+		//and each time we add data/text to the msg variable
+		for (var i = 0; i <arrayLength; i++){
+			// add 1 to the current roung
+			roundNumber = (i + 1);
+
+			//write the current round to message
+			//+= adds more content/data into the message variable
+			msg += 'Round ' + roundNumber + ': ';
+
+			//get the score from the scores array
+			//here we reference the i variable which references and uses the 'scores' array
+			msg += scores[i] + '<br />';
+		};
+
+		document.getElementById('someText').innerHTML = msg;
+
+
+
+
+
+
+
+
+
+	    </script>
+	</body>
+	</html>
+
+
+	
